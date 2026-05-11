@@ -1,0 +1,41 @@
+# Change theme
+# theme = matrix
+theme = dark:'Catppuccin Macchiato',light:'Catppuccin Latte'
+
+# Enable shell integration
+shell-integration = detect
+shell-integration-features = no-cursor
+
+# Change font
+#font-family = "Iosevka Nerd Font"
+font-family = "ALS Collimator VF"
+font-family-bold = "ALS Collimator VF Regular Bold"
+font-family-italic = "ALS Collimator VF Regular Medium Italic"
+font-family-bold-italic = "ALS Collimator VF Regular Bold Italic"
+
+font-size = 16
+font-thicken = false
+#font-thicken-strength = 355
+
+# Change cursor
+cursor-style = block
+cursor-style-blink = true
+
+# Change window style
+macos-titlebar-style = tabs
+macos-option-as-alt = true
+
+# Personal keybindings like iTerm2
+keybind = cmd+left=previous_tab
+keybind = cmd+right=next_tab
+keybind = cmd+shift+left=move_tab:-1
+keybind = cmd+shift+right=move_tab:1
+
+# Some other options
+copy-on-select = true
+macos-titlebar-style = native
+macos-titlebar-proxy-icon = visible
+window-theme = auto
+window-decoration = auto
+window-vsync = true
+background-opacity = 1
