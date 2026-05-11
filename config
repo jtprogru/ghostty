@@ -1,29 +1,33 @@
 # Change theme
-# theme = matrix
 theme = dark:'Catppuccin Macchiato',light:'Catppuccin Latte'
 
 # Enable shell integration
 shell-integration = detect
 shell-integration-features = no-cursor
 
-# Change font
-#font-family = "Iosevka Nerd Font"
+# Change font (variable font, вес — через ось wght)
+# 400=Regular, 450=Book, 500=Medium, 600=Semibold, 700=Bold, 900=Black.
 font-family = "ALS Collimator VF"
-font-family-bold = "ALS Collimator VF Regular Bold"
-font-family-italic = "ALS Collimator VF Regular Medium Italic"
-font-family-bold-italic = "ALS Collimator VF Regular Bold Italic"
+font-variation             = wght=400
+font-variation-bold        = wght=900
+font-variation-italic      = wght=400
+font-variation-italic      = ital=12
+font-variation-bold-italic = wght=700
+font-variation-bold-italic = ital=12
 
-font-size = 16
-font-thicken = false
-#font-thicken-strength = 355
+font-size = 19
+font-thicken = true
+font-thicken-strength = 100
 
 # Change cursor
 cursor-style = block
 cursor-style-blink = true
 
 # Change window style
-macos-titlebar-style = tabs
-macos-option-as-alt = true
+macos-titlebar-style = native
+macos-titlebar-proxy-icon = visible
+# left — Option+символ продолжает работать для спецсимволов через правый Option
+macos-option-as-alt = left
 
 # Personal keybindings like iTerm2
 keybind = cmd+left=previous_tab
@@ -31,11 +35,17 @@ keybind = cmd+right=next_tab
 keybind = cmd+shift+left=move_tab:-1
 keybind = cmd+shift+right=move_tab:1
 
-# Some other options
+# Quality of life
 copy-on-select = true
-macos-titlebar-style = native
-macos-titlebar-proxy-icon = visible
+mouse-hide-while-typing = true
+confirm-close-surface = false
+window-save-state = always
+window-padding-x = 8
+window-padding-y = 6
+scrollback-limit = 10000000
+
+# Window appearance
 window-theme = auto
 window-decoration = auto
-window-vsync = true
-background-opacity = 1
+background-opacity = 0.95
+background-blur-radius = 20
