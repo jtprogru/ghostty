@@ -1,5 +1,5 @@
 # Change theme
-theme = dark:'Catppuccin Macchiato',light:'Catppuccin Latte'
+theme = dark:Catppuccin Macchiato,light:Catppuccin Latte
 
 # Enable shell integration
 shell-integration = detect
@@ -15,7 +15,7 @@ font-variation-italic      = ital=12
 font-variation-bold-italic = wght=700
 font-variation-bold-italic = ital=12
 
-font-size = 19
+font-size = 16
 font-thicken = true
 font-thicken-strength = 100
 
