@@ -5,17 +5,11 @@ theme = dark:Catppuccin Macchiato,light:Catppuccin Latte
 shell-integration = detect
 shell-integration-features = no-cursor
 
-# Change font (variable font, вес — через ось wght)
-# 400=Regular, 450=Book, 500=Medium, 600=Semibold, 700=Bold, 900=Black.
-font-family = "ALS Collimator VF"
-font-variation             = wght=400
-font-variation-bold        = wght=900
-font-variation-italic      = wght=400
-font-variation-italic      = ital=12
-font-variation-bold-italic = wght=700
-font-variation-bold-italic = ital=12
+# Change font
+# Прошлые шрифты и их настройки — в README.md.
+font-family = "Iosevka Nerd Font Mono"
 
-font-size = 16
+font-size = 19
 font-thicken = true
 font-thicken-strength = 100
 

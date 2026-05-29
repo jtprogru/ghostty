@@ -9,19 +9,11 @@
 
 ## Основные решения
 
-**Шрифт — [ALS Collimator VF](https://www.paratype.ru/fonts/pt/als-collimator)** (variable). Вес задаётся через ось `wght`, курсив — через ось `ital` (не `slnt`). Это важно: без явного `font-variation-italic = ital=12` italic визуально не отличается от regular — меняется только вес.
+**Шрифт — [Iosevka Nerd Font Mono](https://www.nerdfonts.com/font-downloads)**. Статический моноширинный с патчем Nerd Fonts (иконки для prompt'ов, file managers и т.п.).
 
 ```
-font-family = "ALS Collimator VF"
-font-variation             = wght=400
-font-variation-bold        = wght=900
-font-variation-italic      = wght=400
-font-variation-italic      = ital=12
-font-variation-bold-italic = wght=700
-font-variation-bold-italic = ital=12
+font-family = "Iosevka Nerd Font Mono"
 ```
-
-Для нескольких осей ключ повторяется — `wght=400, ital=12` через запятую не работает.
 
 **Тема** — Catppuccin, переключается по системной (`dark:Macchiato, light:Latte`).
 
@@ -52,3 +44,21 @@ ghostty +list-fonts | grep -i collimator          # доступные наче�
 ## Что хотрелодится, а что нет
 
 Большинство правок применяются по `Cmd+Shift+,` (reload config). `font-*`, `background-blur-radius` и оконные параметры требуют полного перезапуска (`Cmd+Q`).
+
+## Ранее использовалось
+
+### ALS Collimator VF
+
+[ALS Collimator VF](https://www.paratype.ru/fonts/pt/als-collimator) — variable-шрифт студии Артемия Лебедева (ALS = Art. Lebedev Studio). Вес задаётся через ось `wght`, курсив — через ось `ital` (не `slnt`). Без явного `font-variation-italic = ital=12` italic визуально не отличается от regular — меняется только вес.
+
+```
+font-family = "ALS Collimator VF"
+font-variation             = wght=400
+font-variation-bold        = wght=900
+font-variation-italic      = wght=400
+font-variation-italic      = ital=12
+font-variation-bold-italic = wght=700
+font-variation-bold-italic = ital=12
+```
+
+Для нескольких осей ключ повторяется — `wght=400, ital=12` через запятую не работает. Веса: `400=Regular, 450=Book, 500=Medium, 600=Semibold, 700=Bold, 900=Black`.
