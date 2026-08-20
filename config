@@ -1,5 +1,6 @@
 # Change theme
-theme = dark:Gruvbox Dark,light:Gruvbox Light
+theme = dark:Catppuccin Macchiato,light:Catppuccin Frappe
+# theme = dark:Gruvbox Dark,light:Gruvbox Light
 
 # Enable shell integration
 shell-integration = detect
