@@ -4,8 +4,7 @@
 
 ## Что внутри
 
-- `config` — единственный конфиг Ghostty.
-- `themes/` — симлинки на встроенные темы из бандла приложения (`Catppuccin Latte`, `Catppuccin Macchiato`).
+Один файл — `config`. Темы берутся встроенные из бандла Ghostty, локальных копий не держим.
 
 ## Основные решения
 
@@ -15,13 +14,30 @@
 font-family = "Iosevka Nerd Font Mono"
 ```
 
-**Тема** — Catppuccin, переключается по системной (`dark:Macchiato, light:Latte`).
+**Тема** — Catppuccin, переключается по системной:
+
+```
+theme = dark:Catppuccin Macchiato,light:Catppuccin Frappe
+```
+
+Обе встроены в Ghostty, ставить ничего не надо. Строка с Gruvbox оставлена закомментированной рядом — переключение обратно это правка одной строки.
 
 **Окно** — нативный titlebar, opacity 0.95 + blur 20, padding 8×6.
 
 **Клавиши** — навигация по вкладкам как в iTerm2 (`Cmd+←/→`, `Cmd+Shift+←/→`).
 
 **Option** — `macos-option-as-alt = left`, чтобы правый Option продолжал работать для спецсимволов раскладки.
+
+**Alt+стрелки** — шлются явными CSI-последовательностями:
+
+```
+keybind = alt+right=text:\x1b[1;3C
+keybind = alt+left=text:\x1b[1;3D
+keybind = alt+up=text:\x1b[1;3A
+keybind = alt+down=text:\x1b[1;3B
+```
+
+Без этого правый Option на стрелках отдавал macOS-композицию (`ESC f` / `ESC b`), а zellij читал её как `Alt+f` и открывал ToggleFloatingPanes вместо перемещения по слову. `macos-option-as-alt = left` сам по себе не помогает: он про левый Option, а спецклавиши идут мимо него.
 
 ## Установка
 
